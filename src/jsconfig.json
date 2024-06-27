@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Specify ECMAScript target version
+    "lib": ["dom", "es2017"], // Include library files for the DOM and ECMAScript 2017
+    "jsx": "react-jsx", // Support React JSX
+    "moduleResolution": "node", // Use Node.js module resolution
+    "baseUrl": "./src", // Base directory for non-relative module names
+    "paths": {
+      "@components/*": ["components/*"], // Alias for components directory
+      "@utils/*": ["utils/*"] // Alias for utils directory
+    },
+    "resolveJsonModule": true, // Allow importing JSON files
+    "checkJs": true, // Enable type checking for JavaScript files
+    "allowJs": true // Allow JavaScript files to be compiled
+  },
+  "include": ["src"], // Include all files in the src directory
+  "exclude": ["node_modules", "build"] // Exclude node_modules and build directories
+}
